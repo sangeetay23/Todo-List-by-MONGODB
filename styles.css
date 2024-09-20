@@ -1,0 +1,175 @@
+
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f4f4f4; */
+    background-image: url("https://img.freepik.com/free-photo/programming-background-collage_23-2149901770.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1725667200&semt=ais_hybrid");
+    display: flex;
+    background-repeat: repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #044158;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #044158;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+li:hover {
+    background-color: #f9f9f9;
+}
+
+li .button-container {
+    display: flex;
+    gap: 15px; 
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input[type="text"] {
+        font-size: 1em;
+        margin-right: 5px;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    li .button-container {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    li .button-container button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    input[type="text"] {
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+
+    li {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 700px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    input[type="text"] {
+        font-size: 1.2em;
+    }
+
+    button {
+        font-size: 1.1em;
+        padding: 12px 25px;
+    }
+
+    li {
+        padding: 20px;
+    }
+
+    li .button-container {
+        gap: 20px;
+    }
+}
+
